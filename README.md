@@ -26,8 +26,8 @@ The files `register.py`, `run.py`, `unregister.py` and `update.py` in this packa
 1. From root of this source tree, `pip install .`
 2. `python register.py`
 3. `python run.py`
-4*. Repeat as necessary
-    - Make any necessary code changes to the `important_functions.three`
+4. (Repeat as necessary)
+    - Make code changes to `important_functions.three` or related functions
     - Commit changes
     - Run `update.py` to update the registered UDF on TileDB Cloud
-5*. If necessary, run `python unregister.py` to remove the registered UDF.
+5. (If necessary, run `python unregister.py` to remove the registered UDF.)
