@@ -29,5 +29,8 @@ The files `register.py`, `run.py`, `unregister.py` and `update.py` in this packa
 4. (Repeat as necessary)
     - Make code changes to `important_functions.three` or related functions
     - Commit changes
+    - `pip install .` to update (skip if using an [editable install](https://setuptools.pypa.io/en/latest/userguide/development_mode.html))
     - Run `update.py` to update the registered UDF on TileDB Cloud
 5. (If necessary, run `python unregister.py` to remove the registered UDF.)
+
+> [!NOTE] Registration and update is done against the *installed* version of the target package! This means that running `python update.py` after making local changes to a repo checkout will not have any effect until `pip install` is rerun. If you plan to interactively develop and test changes on Cloud, it is suggested to use an [editable install](https://setuptools.pypa.io/en/latest/userguide/development_mode.html) with `pip install -e .`.
