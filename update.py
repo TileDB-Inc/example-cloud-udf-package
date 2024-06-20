@@ -8,4 +8,4 @@ from tiledb.cloud import udf
 
 me = tiledb.cloud.user_profile().username
 
-udf.register_udf(important_functions.three, "number-three")
+udf.update_udf(important_functions.three, "number-three")
