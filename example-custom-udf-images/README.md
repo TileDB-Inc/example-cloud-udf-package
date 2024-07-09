@@ -111,7 +111,7 @@ docker push AWS_ACCOUT_ID.dkr.ecr.AWS_REGION.amazonaws.com/tiledbenterprise/rest
 
 #### Configure TileDB Cloud Enterprise to use custom images
 
-In the following example, we add a new entry for our custom image under section `CustomeImages`, version 3.8, 3.9:
+In the following example, we add a new entry for our custom image under section `CustomImages`, version 3.8, 3.9:
 
 ```yaml
 "my_custom_image": "tiledbenterprise/rest-python-udf-custom-3.9:2.23.4" 
@@ -147,7 +147,7 @@ tiledb-cloud-rest:
               "geo": "tiledbenterprise/rest-python-udf-geo-3.9:2.23.4"
               "imaging-dev": "tiledbenterprise/rest-python-udf-imaging:2.23.4"
               "vectorsearch": "tiledbenterprise/rest-python-udf-vectorsearch:2.23.4"
-              "my_custom_image": "tiledbenterprise/rest-python-udf-custom-3.9:2.23.4"   
+              "my_custom_image": "tiledbenterprise/rest-python-udf-custom-3.9:2.23.4"      #     !!! This is the new image, created above
         "r":
           # R is largely compatible across versions.
           # "*" denotes a fallback, i.e., it will be used for *any* version
@@ -176,7 +176,7 @@ Then install dependencies
 pip install .
 ```
 
-Then run `python custom_image.py`. The, will use 3.9 section of images because the client uses 3.9, while `image_name` argument will select the correct custom image. Please note that if no image is defined, the default is used. The result can be seen under `Monitor->Logs Tasks` section in TileDB Cloud Console, showing that owr custom images= using the additional package is used:
+Then run `python custom_image.py`. The, will use 3.9 section of images because the client uses 3.9, while `image_name` argument will select the correct custom image. Please note that if no image is defined, the default is used. The result can be seen under `Monitor->Logs Tasks` section in TileDB Cloud Console, showing that our custom image is used, providing the additional package:
 
 ```bash
 [2024-07-09 20:24:16,867] [custom] [test_custom_image] [INFO] (209, 123, 193)
@@ -186,7 +186,7 @@ Then run `python custom_image.py`. The, will use 3.9 section of images because t
 
 ## Custom Images using Python 3.11
 
-We will provide an example of how to build a Dockerfile for Python 3.11 soon
+We will provide an example of how to build a Dockerfile for Python 3.11 soon. We do not currently provide Python 3.11 images, so we are finalizing an updated base image to start from.
 
 References
 1. [Custom User Defined Images](https://app.gitbook.com/o/-LnZGqrmM4XMrJx6aqI-/s/-MZPCnMe65GdoyPLaTdA/custom-user-defined-images)
