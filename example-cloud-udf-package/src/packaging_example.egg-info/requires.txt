@@ -1,2 +1,0 @@
-tiledb-cloud
-cloudpickle>=2

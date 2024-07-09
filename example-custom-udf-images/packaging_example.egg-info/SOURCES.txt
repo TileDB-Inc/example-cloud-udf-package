@@ -1,8 +1,0 @@
-README.md
-custom_image.py
-pyproject.toml
-packaging_example.egg-info/PKG-INFO
-packaging_example.egg-info/SOURCES.txt
-packaging_example.egg-info/dependency_links.txt
-packaging_example.egg-info/requires.txt
-packaging_example.egg-info/top_level.txt

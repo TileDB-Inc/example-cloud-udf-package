@@ -1,5 +1,0 @@
-Metadata-Version: 2.1
-Name: packaging-example
-Version: 0.0.1
-Requires-Dist: tiledb-cloud
-Requires-Dist: cloudpickle>=2
