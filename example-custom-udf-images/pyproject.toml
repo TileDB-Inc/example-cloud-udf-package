@@ -1,0 +1,7 @@
+[project]
+name = "packaging-example"
+version = "0.0.1"
+dependencies = ["tiledb-cloud", "cloudpickle >= 2"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
