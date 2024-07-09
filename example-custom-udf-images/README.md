@@ -156,6 +156,12 @@ tiledb-cloud-rest:
             DefaultImage: "tiledbenterprise/rest-r-udf:2.23.4"
 ```
 
+After values.yaml file is changed we need to upgrade the helm chart
+
+```bash
+helm upgrade --install --wait --timeout 2400s --namespace tiledb-cloud --values .values.yaml tiledb-cloud tiledb/tiledb-cloud-enterprise
+```
+
 ## Usage
 
 Every section under Images, includes a `Version` array entry. Images that are included under `Default` or `CustomImages` fields are enabled based on the client environment. For our example we need to use 3.9 images, as a result we are creating an environment for Python 3.9 using conda:
