@@ -189,5 +189,5 @@ Then run `python custom_image.py`. The, will use 3.9 section of images because t
 We will provide an example of how to build a Dockerfile for Python 3.11 soon. We do not currently provide Python 3.11 images, so we are finalizing an updated base image to start from.
 
 References
-1. [Custom User Defined Images](https://app.gitbook.com/o/-LnZGqrmM4XMrJx6aqI-/s/-MZPCnMe65GdoyPLaTdA/custom-user-defined-images)
-2. [Configure AWS ECR Container Registry for UDF Images](https://app.gitbook.com/o/-LnZGqrmM4XMrJx6aqI-/s/-MZPCnMe65GdoyPLaTdA/custom-user-defined-images/configure-aws-ecr-container-registry-for-udf-images)
+1. [Custom User Defined Images](https://docs.tiledb.com/enterprise/custom-user-defined-images)
+2. [Configure AWS ECR Container Registry for UDF Images](https://docs.tiledb.com/enterprise/custom-user-defined-images/configure-aws-ecr-container-registry-for-udf-images)
